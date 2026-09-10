@@ -76,6 +76,11 @@ export interface SiteSettingsData {
   tiktokUrl: string;
 }
 
+const nunaPhoto = (sku: string, angle = 1) =>
+  `/images/nuna-diapers/${sku}/Nuna ${sku.includes('wipes') ? 'wipes' : sku.includes('xxxl') ? 'XXXL' : sku.includes('xxl') ? 'XXL' : sku.includes('xl') ? 'XL' : sku.includes('l-') ? 'L' : sku.includes('m-') ? 'M' : 'S'} (${angle}).webp`;
+const bilanPhoto = (size: 3 | 4, angle = 1) =>
+  `/images/bilan/size-${size}/Size ${size} (${angle}).webp`;
+
 export const SEED_BRANDS: BrandData[] = [
   {
     _id: 'brand-nuna-diapers',
@@ -98,46 +103,124 @@ export const SEED_BRANDS: BrandData[] = [
       'Intelligent wetness indicator strip that changes color when it is time to change',
       'Unbeatable Kenyan value—premium performance competing directly with multinational brands'
     ],
-    heroImage: '/images/Nuna_Daipers_Front.jpg',
+    heroImage: nunaPhoto('nuna-s-1-2'),
     productImages: [
-      '/images/Nuna_Daipers_Front.jpg',
-      '/images/NunaDiaper_back.webp'
+      nunaPhoto('nuna-s-1-2'),
+      nunaPhoto('nuna-m-3'),
+      nunaPhoto('nuna-xl-5')
     ],
     productLine: [
       {
-        productName: 'Nuna Newborn Comfort (Size 1)',
-        productImage: '/images/Nuna_Daipers_Front.jpg',
-        productDescription: 'Specially shaped for umbilical cord care with velvet-soft touch for delicate newborn skin.',
-        productBenefits: ['Umbilical cord notch protection', 'Rapid fluid absorption core', 'Hypoallergenic certified'],
-        productSize: '2 - 5 kg (Pack of 44 / Jumbo 88 pcs)'
+        productName: 'Nuna Premium Baby Diapers - New Stage 1-2 (S)',
+        productImage: nunaPhoto('nuna-s-1-2'),
+        productDescription: 'Soft, dependable protection for little ones in the New Stage 1-2 range.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage New 1-2 (S), up to 8 kg, 38 count'
       },
       {
-        productName: 'Nuna Mini Active (Size 2)',
-        productImage: '/images/Nuna_Daipers_Front.jpg',
-        productDescription: 'Flexible side wings and snug fit designed for babies starting to roll and wiggle.',
-        productBenefits: ['High-capacity fluid channels', 'Soft stretchy velcro tabs', 'Cottony breathable outer layer'],
-        productSize: '3 - 6 kg (Pack of 40 / Jumbo 80 pcs)'
+        productName: 'Nuna Premium Baby Diapers - New Stage 1-2 (S) Value Pack',
+        productImage: nunaPhoto('nuna-s-1-2b'),
+        productDescription: 'The same gentle New Stage 1-2 protection in a larger pack.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage New 1-2 (S), up to 8 kg, 68 count'
       },
       {
-        productName: 'Nuna Midi Explorer (Size 3)',
-        productImage: '/images/Nuna_Daipers_Front.jpg',
-        productDescription: 'Engineered for crawling and active daytime play with zero sag and maximum leak protection.',
-        productBenefits: ['Anti-sag core technology', '3D leak-proof side barriers', 'Up to 12 hours absorption'],
-        productSize: '4 - 9 kg (Pack of 36 / Jumbo 72 pcs)'
+        productName: 'Nuna Premium Baby Diapers - Stage 3 (M)',
+        productImage: nunaPhoto('nuna-m-3'),
+        productDescription: 'Comfortable everyday protection for babies progressing through Stage 3.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 3 (M)'
       },
       {
-        productName: 'Nuna Maxi Motion (Size 4)',
-        productImage: '/images/NunaDiaper_back.webp',
-        productDescription: 'Maximum absorption capacity for energetic toddlers walking and climbing.',
-        productBenefits: ['Double absorbent core', 'Flexible thigh cuffs', 'Zero nighttime leaks guarantee'],
-        productSize: '7 - 18 kg (Pack of 32 / Jumbo 64 pcs)'
+        productName: 'Nuna Premium Baby Diapers - Stage 3 (M) Pack Variant B',
+        productImage: nunaPhoto('nuna-m-3b'),
+        productDescription: 'Stage 3 protection in the supplied B pack variant.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 3 (M)'
       },
       {
-        productName: 'Nuna Junior Pants (Size 5)',
-        productImage: '/images/Nuna_Daipers_Front.jpg',
-        productDescription: 'Easy pull-up pants perfect for active toddlers and seamless potty training.',
-        productBenefits: ['360° tear-away waistband', 'Easy pull-up and pull-down', 'Superior heavy-wetting absorption'],
-        productSize: '11 - 25 kg (Pack of 28 / Jumbo 56 pcs)'
+        productName: 'Nuna Premium Baby Diapers - Stage 3 (M) Pack Variant C',
+        productImage: nunaPhoto('nuna-m-3c'),
+        productDescription: 'Stage 3 protection in the supplied C pack variant.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 3 (M)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 4 (L)',
+        productImage: nunaPhoto('nuna-l-4'),
+        productDescription: 'Reliable, comfortable coverage for active little ones in Stage 4.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 4 (L)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 4 (L) Pack Variant B',
+        productImage: nunaPhoto('nuna-l-4b'),
+        productDescription: 'Stage 4 protection in the supplied B pack variant.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 4 (L)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 4 (L) Pack Variant C',
+        productImage: nunaPhoto('nuna-l-4c'),
+        productDescription: 'Stage 4 protection in the supplied C pack variant.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 4 (L)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 4 (L) 20 Count',
+        productImage: nunaPhoto('nuna-l-20'),
+        productDescription: 'Convenient Stage 4 pack for dependable everyday protection.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 4 (L), 20 count'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 5 (XL)',
+        productImage: nunaPhoto('nuna-xl-5'),
+        productDescription: 'Comfortable protection designed for the Stage 5 fit.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 5 (XL)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 5 (XL) Pack Variant B',
+        productImage: nunaPhoto('nuna-xl-5b'),
+        productDescription: 'Stage 5 protection in the supplied B pack variant.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 5 (XL)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 5 (XL) Pack Variant C',
+        productImage: nunaPhoto('nuna-xl-5c'),
+        productDescription: 'Stage 5 protection in the supplied C pack variant.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 5 (XL)'
+      },
+      {
+        productName: 'Nuna Adult Diaper - XL 20 Count',
+        productImage: nunaPhoto('nuna-xl-20'),
+        productDescription: 'Absorbent adult diaper protection in an XL convenience pack.',
+        productBenefits: ['Absorbent core', 'Comfortable fit', 'Secure protection'],
+        productSize: 'XL, 20 count'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 6 (XXL)',
+        productImage: nunaPhoto('nuna-xxl-6'),
+        productDescription: 'Comfortable protection for children progressing to Stage 6.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 6 (XXL)'
+      },
+      {
+        productName: 'Nuna Premium Baby Diapers - Stage 7 (XXXL)',
+        productImage: nunaPhoto('nuna-xxxl-7'),
+        productDescription: 'Comfortable protection for children progressing to Stage 7.',
+        productBenefits: ['Soft, breathable comfort', 'Absorbent core', 'Flexible fit'],
+        productSize: 'Stage 7 (XXXL)'
+      },
+      {
+        productName: 'Nuna Premium Baby Wipes',
+        productImage: nunaPhoto('nuna-wipes'),
+        productDescription: 'Gentle wipes for quick, everyday baby care.',
+        productBenefits: ['Soft touch', 'Everyday convenience', 'Easy to carry'],
+        productSize: '15 × 20 cm'
       }
     ],
     usageInstructions:
@@ -172,39 +255,54 @@ export const SEED_BRANDS: BrandData[] = [
       'Quick 2-minute preparation with warm clean water or milk',
       'Pure Kenyan grain formulation with no artificial preservatives, colorings, or sweeteners'
     ],
-    heroImage: '/images/Nunalac_Infant_formula.jpg',
+    heroImage: '/images/nunalac/Formula-1.webp',
     productImages: [
-      '/images/Nunalac_Infant_formula.jpg',
-      '/images/Nunalac_Infant_formula_single.webp'
+      '/images/nunalac/Formula-1.webp',
+      '/images/nunalac/Formula-2.webp',
+      '/images/nunalac/Wheat-with-milk.webp'
     ],
     productLine: [
       {
-        productName: 'Nunalac Wheat & Milk Baby Cereal',
-        productImage: '/images/Nunalac_Infant_formula_single.webp',
-        productDescription: 'The classic smooth starter cereal loaded with wholesome wheat and nutritious milk.',
-        productBenefits: ['High protein for steady growth', 'Iron fortified', 'Naturally creamy taste'],
-        productSize: '400g Tin / 250g Economy Box'
+        productName: 'Nunalac+ Infant Formula - Stage 1',
+        productImage: '/images/nunalac/Formula-1.webp',
+        productDescription: 'Milk-based infant formula for the first stage of feeding.',
+        productBenefits: ['Milk-based powder', 'Stage 1 formula', '400 g tin'],
+        productSize: 'Stage 1, 0-6 months, 400 g'
       },
       {
-        productName: 'Nunalac Rice & Mixed Fruits',
-        productImage: '/images/Nunalac_Infant_formula.jpg',
-        productDescription: 'Gentle, gluten-free rice cereal infused with real banana and apple purees.',
-        productBenefits: ['Gluten-free & gentle on sensitive tummies', 'Vitamin C for iron absorption', 'Digestive dietary fiber'],
-        productSize: '400g Tin / 250g Economy Box'
+        productName: 'Nunalac+ Follow-Up Formula - Stage 2',
+        productImage: '/images/nunalac/Formula-2.webp',
+        productDescription: 'Milk-based follow-up formula for the next stage of feeding.',
+        productBenefits: ['Milk-based powder', 'Stage 2 formula', '400 g tin'],
+        productSize: 'Stage 2, 6-12 months, 400 g'
       },
       {
-        productName: 'Nunalac Multi-Grain & Honey (12m+)',
-        productImage: '/images/Nunalac_Infant_formula_single.webp',
-        productDescription: 'Hearty blend of whole wheat, oats, and maize lightly kissed with natural Kenyan honey.',
-        productBenefits: ['Sustained energy for active toddlers', 'B-complex vitamins for vitality', 'Rich texture'],
-        productSize: '400g Tin'
+        productName: 'Nuna Cereal+ Premium Rice & Milk',
+        productImage: '/images/nunalac/Rice-milk.webp',
+        productDescription: 'A smooth rice and milk cereal for babies beginning their cereal journey.',
+        productBenefits: ['Easy to digest', 'Rice and milk', '6+ months'],
+        productSize: '6+ months, 350 g'
       },
       {
-        productName: 'Nunalac Infant Soya Oats',
-        productImage: '/images/Nunalac_Infant_formula.jpg',
-        productDescription: 'High-protein soya and prebiotic oat porridge formulation for optimal weight gain.',
-        productBenefits: ['Plant-powered protein', 'Prebiotic dietary fiber', 'Lactose-friendly alternative'],
-        productSize: '400g Tin'
+        productName: 'Nuna Cereal+ Premium Wheat, Milk & Dates',
+        productImage: '/images/nunalac/Wheat-milk-dates.webp',
+        productDescription: 'A creamy wheat and milk cereal blended with dates.',
+        productBenefits: ['Easy to digest', 'Wheat, milk and dates', '6+ months'],
+        productSize: '6+ months, 350 g'
+      },
+      {
+        productName: 'Nuna Cereal+ Premium Wheat, Milk & Honey',
+        productImage: '/images/nunalac/Wheat-milk-honey.webp',
+        productDescription: 'A creamy wheat and milk cereal blended with honey.',
+        productBenefits: ['Easy to digest', 'Wheat, milk and honey', '6+ months'],
+        productSize: '6+ months, 350 g'
+      },
+      {
+        productName: 'Nuna Cereal+ Premium Wheat with Milk',
+        productImage: '/images/nunalac/Wheat-with-milk.webp',
+        productDescription: 'A smooth, easy-to-digest wheat and milk cereal for little ones.',
+        productBenefits: ['Easy to digest', 'Wheat with milk', '6+ months'],
+        productSize: '6+ months, 350 g'
       }
     ],
     usageInstructions:
@@ -239,40 +337,26 @@ export const SEED_BRANDS: BrandData[] = [
       'Discreet, ultra-slim ergonomic silhouette invisible under clothes',
       'Reliable, dignity-first personal care priced for consistent everyday access'
     ],
-    heroImage: '/images/BilanAlwaysRegular.webp',
+    heroImage: bilanPhoto(4),
     productImages: [
-      '/images/BilanAlwaysRegular.webp',
-      '/images/BilanUltraThinAlwaysSize3.webp',
-      '/images/BilanUltraThinAlwaysSize4.webp'
+      bilanPhoto(3),
+      bilanPhoto(4, 1),
+      bilanPhoto(4, 2)
     ],
     productLine: [
       {
-        productName: 'Bilan Ultra Thin Regular (with Wings)',
-        productImage: '/images/BilanAlwaysRegular.webp',
-        productDescription: 'Daytime comfort pad with instant-dry gel core for moderate menstrual flow.',
-        productBenefits: ['Ultra-thin 240mm length', 'Wide side wings', 'Anti-bunching adhesive strip'],
-        productSize: 'Pack of 8 / Pack of 16 / Value 32 pcs'
+        productName: 'Bilan Ultra Thin - Size 3',
+        productImage: bilanPhoto(3),
+        productDescription: 'Ultra-thin sanitary protection in the Size 3 pack.',
+        productBenefits: ['Ultra-thin profile', 'Comfortable protection', 'Everyday confidence'],
+        productSize: 'Size 3'
       },
       {
-        productName: 'Bilan Super Long Night Protection (with Wings)',
-        productImage: '/images/BilanUltraThinAlwaysSize4.webp',
-        productDescription: 'Extended 290mm pad with wider back coverage for 100% leak-proof sleep.',
-        productBenefits: ['290mm extended back flare', 'Overnight heavy flow absorption', 'Double wings for stability'],
-        productSize: 'Pack of 8 / Pack of 16 pcs'
-      },
-      {
-        productName: 'Bilan Maxi Heavy Flow Extra (Size 3)',
-        productImage: '/images/BilanUltraThinAlwaysSize3.webp',
-        productDescription: 'Thick, cushion-soft pad for postpartum and very heavy flow days.',
-        productBenefits: ['Extra cushioned volume', 'Fast absorption core', 'High side barriers'],
-        productSize: 'Pack of 10 pcs'
-      },
-      {
-        productName: 'Bilan Daily Breathable Pantyliners',
-        productImage: '/images/BilanAlwaysRegular.webp',
-        productDescription: 'Feather-light daily liners for everyday freshness and light discharge.',
-        productBenefits: ['Breathable cotton layer', 'Anatomical contoured fit', 'Gentle on sensitive skin'],
-        productSize: 'Pack of 20 / Value 40 pcs'
+        productName: 'Bilan Ultra Thin - Size 4',
+        productImage: bilanPhoto(4),
+        productDescription: 'Ultra-thin sanitary protection in the Size 4 pack.',
+        productBenefits: ['Ultra-thin profile', 'Comfortable protection', 'Everyday confidence'],
+        productSize: 'Size 4, 8+2 pads'
       }
     ],
     usageInstructions:
@@ -345,7 +429,7 @@ export const SEED_BRANDS: BrandData[] = [
     featured: true,
     order: 4
   }
-];
+].filter((brand) => brand._id !== 'brand-sofresh-soclean');
 
 export const SEED_STOCKISTS: StockistData[] = [
   {
