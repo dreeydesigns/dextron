@@ -81,7 +81,7 @@ const nunaPhoto = (sku: string, angle = 1) =>
 const bilanPhoto = (size: 3 | 4, angle = 1) =>
   `/images/bilan/size-${size}/Size ${size} (${angle}).webp`;
 
-export const SEED_BRANDS: BrandData[] = [
+export const SEED_BRANDS: BrandData[] = ([
   {
     _id: 'brand-nuna-diapers',
     name: 'Nuna Diapers',
@@ -429,7 +429,7 @@ export const SEED_BRANDS: BrandData[] = [
     featured: true,
     order: 4
   }
-].filter((brand) => brand._id !== 'brand-sofresh-soclean');
+] as BrandData[]).filter((brand) => brand._id !== 'brand-sofresh-soclean');
 
 export const SEED_STOCKISTS: StockistData[] = [
   {
