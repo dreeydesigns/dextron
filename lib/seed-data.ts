@@ -81,7 +81,7 @@ const nunaPhoto = (sku: string, angle = 1) =>
 const bilanPhoto = (size: 3 | 4, angle = 1) =>
   `/images/bilan/size-${size}/Size ${size} (${angle}).webp`;
 
-export const SEED_BRANDS: BrandData[] = ([
+export const SEED_BRANDS: BrandData[] = [
   {
     _id: 'brand-nuna-diapers',
     name: 'Nuna Diapers',
