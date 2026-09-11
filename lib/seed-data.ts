@@ -370,7 +370,7 @@ export const SEED_BRANDS: BrandData[] = ([
     featured: true,
     order: 3
   },
-] as BrandData[];
+];
 
 export const SEED_STOCKISTS: StockistData[] = [
   {
