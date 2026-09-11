@@ -44,13 +44,6 @@ export default function Navbar() {
       color: 'bg-rose-500 text-rose-600',
       badge: 'Feminine Care',
     },
-    {
-      name: 'SoFresh SoClean',
-      slug: '/brands/sofresh-soclean',
-      desc: 'Powerful & Affordable Home Cleaners',
-      color: 'bg-emerald-500 text-emerald-600',
-      badge: 'Home Essentials',
-    },
   ];
 
   const navLinks = [
@@ -267,7 +260,7 @@ export default function Navbar() {
 
             <div className="py-2 border-y border-gray-100">
               <div className="px-3 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">
-                Our 4 Brands
+                Our 3 Brands
               </div>
               <div className="grid grid-cols-1 gap-1 mt-1">
                 {brands.map((b) => (

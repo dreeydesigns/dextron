@@ -46,7 +46,7 @@ export default defineType({
       name: 'heroSubheadline',
       title: 'Homepage Hero Sub-headline',
       type: 'text',
-      initialValue: 'Quality baby care, feminine hygiene, and home cleaning products — made for Kenyan families, priced for real life.',
+      initialValue: 'Quality baby care, infant nutrition, and feminine hygiene products — made for Kenyan families, priced for real life.',
     }),
     defineField({
       name: 'facebookUrl',

@@ -49,7 +49,7 @@ export default async function HomePage() {
               {/* Sub-headline */}
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 {settings.heroSubheadline ||
-                  'Premium baby diapers, fortified infant cereals, feminine hygiene pads, and household detergents — made for Kenyan families, priced for real life.'}
+                  'Premium baby diapers, infant formula and cereals, and feminine hygiene pads — made for Kenyan families, priced for real life.'}
               </p>
 
               {/* CTAs */}
@@ -68,7 +68,7 @@ export default async function HomePage() {
                   href="#brands"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white hover:bg-gray-100 text-gray-900 font-bold text-base border border-gray-300 shadow-sm transition"
                 >
-                  <span>Explore Our 4 Brands</span>
+                  <span>Explore Our 3 Brands</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -102,7 +102,7 @@ export default async function HomePage() {
                   >
                     <div className="h-28 sm:h-32 w-full rounded-2xl bg-white p-2 flex items-center justify-center overflow-hidden">
                       <img
-                        src="/images/Nuna_Daipers_Front.jpg"
+                        src="/images/nuna-diapers/nuna-s-1-2/Nuna%20S%20%281%29.webp"
                         alt="Nuna Diapers"
                         className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform"
                       />
@@ -120,14 +120,14 @@ export default async function HomePage() {
                   >
                     <div className="h-28 sm:h-32 w-full rounded-2xl bg-white p-2 flex items-center justify-center overflow-hidden">
                       <img
-                        src="/images/Nunalac_Infant_formula_single.webp"
-                        alt="Nunalac Infant Cereal"
+                        src="/images/nunalac/Formula-1.webp"
+                        alt="Nunalac Infant Formula"
                         className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform"
                       />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-amber-900 text-sm">Nunalac Cereal</h4>
-                      <p className="text-[11px] text-amber-700 font-medium">Iron & Vitamin Fortified</p>
+                      <h4 className="font-extrabold text-amber-900 text-sm">Nunalac</h4>
+                      <p className="text-[11px] text-amber-700 font-medium">Formula & Cereal+</p>
                     </div>
                   </Link>
 
@@ -138,7 +138,7 @@ export default async function HomePage() {
                   >
                     <div className="h-28 sm:h-32 w-full rounded-2xl bg-white p-2 flex items-center justify-center overflow-hidden">
                       <img
-                        src="/images/BilanAlwaysRegular.webp"
+                        src="/images/bilan/size-4/Size%204%20%281%29.webp"
                         alt="Bilan Sanitary Pads"
                         className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform"
                       />
@@ -149,23 +149,6 @@ export default async function HomePage() {
                     </div>
                   </Link>
 
-                  {/* Card 4: SoFresh */}
-                  <Link
-                    href="/brands/sofresh-soclean"
-                    className="group p-3.5 sm:p-4 rounded-3xl bg-emerald-50/80 border border-emerald-100 hover:border-emerald-300 shadow-sm hover:shadow-md transition-all space-y-2 block"
-                  >
-                    <div className="h-28 sm:h-32 w-full rounded-2xl bg-white p-2 flex items-center justify-center overflow-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=400&q=80"
-                        alt="SoFresh Cleaners"
-                        className="max-h-full max-w-full object-cover rounded-xl group-hover:scale-105 transition-transform"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-extrabold text-emerald-900 text-sm">SoFresh Home</h4>
-                      <p className="text-[11px] text-emerald-700 font-medium">Tough on Grease</p>
-                    </div>
-                  </Link>
                 </div>
 
                 {/* Floating Testimonial Pill */}

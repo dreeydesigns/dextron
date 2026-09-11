@@ -28,12 +28,6 @@ export default function BrandCard({ brand }: BrandCardProps) {
       borderHover: 'hover:border-rose-300 hover:shadow-rose-100/50',
       dotBg: 'bg-rose-500',
     },
-    'sofresh-soclean': {
-      badgeBg: 'bg-emerald-100 text-emerald-800',
-      buttonBg: 'bg-emerald-600 hover:bg-emerald-700 text-white',
-      borderHover: 'hover:border-emerald-300 hover:shadow-emerald-100/50',
-      dotBg: 'bg-emerald-500',
-    },
   };
 
   const style = brandStyles[brand.slug.current] || {

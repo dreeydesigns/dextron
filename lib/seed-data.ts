@@ -58,7 +58,7 @@ export interface FAQData {
   _id: string;
   question: string;
   answer: string;
-  category: 'general' | 'nuna-diapers' | 'nunalac' | 'bilan' | 'sofresh-soclean' | 'shipping-delivery' | 'distribution-wholesale';
+  category: 'general' | 'nuna-diapers' | 'nunalac' | 'bilan' | 'shipping-delivery' | 'distribution-wholesale';
   order: number;
 }
 
@@ -370,66 +370,7 @@ export const SEED_BRANDS: BrandData[] = ([
     featured: true,
     order: 3
   },
-  {
-    _id: 'brand-sofresh-soclean',
-    name: 'SoFresh SoClean',
-    slug: { current: 'sofresh-soclean' },
-    tagline: 'A cleaner home for less.',
-    category: 'home-cleaning',
-    primaryColor: '#16A34A',
-    accentColor: '#15803D',
-    lightBg: '#F0FDF4',
-    borderClass: 'border-green-200',
-    badge: 'Tough on Grease, Fair on Price',
-    targetAudience: 'Kenyan households, caterers, institutions, and cleaning professionals',
-    description:
-      'SoFresh SoClean delivers high-potency cleaning power that cuts through tough grease, dirt, and stains without the expensive price tag. Formulated with biodegradable surfactants and uplifting citrus and floral fragrances, our cleaning range keeps Kenyan homes sparkling clean, hygienic, and fresh.',
-    keyBenefits: [
-      'Heavy-duty degreasing formula that instantly dissolves dried oils and burnt food',
-      'Kills 99.9% of common household germs, bacteria, and viruses',
-      'Concentrated long-lasting formulation—a little goes a very long way',
-      'Gentle on hands with added glycerin skin moisturizers',
-      'Cost-effective household essentials packaged in convenient economy sizes'
-    ],
-    heroImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
-    productLine: [
-      {
-        productName: 'SoFresh Lemon Sparkle Dishwashing Liquid',
-        productDescription: 'Super concentrated dish detergent with real lemon zest extract for spotless pots and plates.',
-        productBenefits: ['Instant grease cutter', 'Rich long-lasting foam', 'Gentle on hands with glycerin'],
-        productSize: '500ml Bottle / 750ml Squeeze / 5L Commercial Jerrycan'
-      },
-      {
-        productName: 'SoFresh Pine Disinfectant Floor & Tile Cleaner',
-        productDescription: 'Antibacterial multi-surface cleaner that leaves tiles gleaming and rooms smelling fresh.',
-        productBenefits: ['Kills 99.9% germs', 'Quick-dry streak-free formula', 'Long-lasting forest pine aroma'],
-        productSize: '1L Bottle / 5L Jerrycan'
-      },
-      {
-        productName: 'SoFresh Power Thick Bleach & Toilet Cleaner',
-        productDescription: 'Thick clinging bleach formula that removes stains, limescale, and toilet bowl grime.',
-        productBenefits: ['Thick formula clings to slopes', 'Deep disinfecting bleach action', 'Whitens and sanitizes'],
-        productSize: '750ml Angled Neck / 5L Jerrycan'
-      },
-      {
-        productName: 'SoFresh Floral Breeze Fabric Softener',
-        productDescription: 'Conditioning laundry rinse that softens clothes and locks in fresh spring floral perfume.',
-        productBenefits: ['Reduces static and creases', 'Easy ironing glide', 'Delightful 7-day fragrance hold'],
-        productSize: '1L Bottle / 2L Value Bottle'
-      }
-    ],
-    usageInstructions:
-      'For dishwashing, dilute one teaspoon in a bowl of warm water or apply a few drops directly to a damp sponge. For floor and surface cleaning, add 2 capfuls to a bucket of water (approx. 5 liters) and mop thoroughly. For stubborn toilet stains, apply thick bleach under the rim, leave for 15 minutes, brush and flush.',
-    certifications: [
-      'KEBS Quality Household Detergent Standard (KS 100)',
-      'Eco-Friendly Biodegradable Surfactants',
-      'ISO 9001 Quality Managed Manufacturing Facility'
-    ],
-    competitorContext: 'Delivers the cleaning punch of Sunlight and Vim at everyday pocket-friendly pricing for Kenyan families.',
-    featured: true,
-    order: 4
-  }
-] as BrandData[]).filter((brand) => brand._id !== 'brand-sofresh-soclean');
+] as BrandData[];
 
 export const SEED_STOCKISTS: StockistData[] = [
   {
@@ -440,7 +381,7 @@ export const SEED_STOCKISTS: StockistData[] = [
     region: 'Nairobi',
     address: 'Pioneer Building, Moi Avenue, Nairobi',
     phone: '+254 722 000111',
-    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan', 'SoFresh SoClean'],
+    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan'],
     featured: true
   },
   {
@@ -473,7 +414,7 @@ export const SEED_STOCKISTS: StockistData[] = [
     region: 'Coast / Mombasa',
     address: 'Digo Road opposite Central Post Office, Mombasa',
     phone: '+254 711 234567',
-    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan', 'SoFresh SoClean'],
+    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan'],
     featured: true
   },
   {
@@ -495,7 +436,7 @@ export const SEED_STOCKISTS: StockistData[] = [
     region: 'Rift Valley',
     address: 'Club Road, Nakuru CBD',
     phone: '+254 733 456789',
-    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan', 'SoFresh SoClean'],
+    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan'],
     featured: true
   },
   {
@@ -506,7 +447,7 @@ export const SEED_STOCKISTS: StockistData[] = [
     region: 'Rift Valley',
     address: 'Uganda Road, Near Central Market, Eldoret',
     phone: '+254 720 567890',
-    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan', 'SoFresh SoClean'],
+    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan'],
     featured: false
   },
   {
@@ -517,7 +458,7 @@ export const SEED_STOCKISTS: StockistData[] = [
     region: 'Western / Nyanza',
     address: 'Oginga Odinga Street, Kisumu',
     phone: '+254 721 678901',
-    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan', 'SoFresh SoClean'],
+    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan'],
     featured: true
   },
   {
@@ -539,7 +480,7 @@ export const SEED_STOCKISTS: StockistData[] = [
     region: 'Central',
     address: 'Machakos CBD Market Road',
     phone: '+254 724 890123',
-    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan', 'SoFresh SoClean'],
+    brandsStocked: ['Nuna Diapers', 'Nunalac', 'Bilan'],
     featured: false
   }
 ];
@@ -587,7 +528,7 @@ export const SEED_TESTIMONIALS: TestimonialData[] = [
     customerLocation: 'Eastleigh, Nairobi',
     brandName: 'Dextron Enterprise',
     quote:
-      'Dextron has been our most dependable FMCG partner this year. Nuna Diapers and SoFresh dishwash fly off the shelves quickly. Their delivery turnaround and distributor profit margins are top tier.',
+      'Dextron has been our most dependable FMCG partner this year. Nuna Diapers, Nunalac and Bilan fly off the shelves quickly. Their delivery turnaround and distributor profit margins are top tier.',
     rating: 5,
     approved: true,
     dateReceived: '2026-08-18'
@@ -607,7 +548,7 @@ export const SEED_FAQS: FAQData[] = [
     _id: 'faq-2',
     question: 'Are Dextron products certified by the Kenya Bureau of Standards (KEBS)?',
     answer:
-      'Yes, 100%. Every single product line manufactured and distributed by Dextron Enterprise—including Nuna Diapers (KS EAS 96), Nunalac Infant Cereal (KS EAS 72), Bilan Sanitary Towels, and SoFresh Cleaning Essentials—fully complies with KEBS standardization marks and stringent safety regulations.',
+      'Yes, 100%. Every product line manufactured and distributed by Dextron Enterprise—including Nuna Diapers (KS EAS 96), Nunalac formula and cereal, and Bilan Sanitary Towels—fully complies with applicable KEBS standardization marks and safety regulations.',
     category: 'general',
     order: 2
   },
@@ -651,14 +592,6 @@ export const SEED_FAQS: FAQData[] = [
     category: 'bilan',
     order: 7
   },
-  {
-    _id: 'faq-8',
-    question: 'Can SoFresh SoClean dishwashing liquid be used on baby feeding bottles?',
-    answer:
-      'Yes! SoFresh dishwashing liquid contains food-grade biodegradable cleaning agents that rinse off cleanly with zero chemical residue. Always rinse thoroughly with clean running water and sterilize feeding bottles as recommended.',
-    category: 'sofresh-soclean',
-    order: 8
-  }
 ];
 
 export const SEED_SITE_SETTINGS: SiteSettingsData = {

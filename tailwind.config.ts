@@ -36,12 +36,6 @@ const config: Config = {
             border: "#FBCFE8",
             accent: "#9D174D",
           },
-          sofresh: {
-            DEFAULT: "#16A34A", // Fresh Green
-            light: "#F0FDF4",
-            border: "#BBF7D0",
-            accent: "#15803D",
-          },
         },
       },
       fontFamily: {

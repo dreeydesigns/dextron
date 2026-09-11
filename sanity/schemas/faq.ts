@@ -27,7 +27,6 @@ export default defineType({
           { title: 'Nuna Diapers', value: 'nuna-diapers' },
           { title: 'Nunalac', value: 'nunalac' },
           { title: 'Bilan', value: 'bilan' },
-          { title: 'SoFresh SoClean', value: 'sofresh-soclean' },
           { title: 'Shipping & Delivery', value: 'shipping-delivery' },
           { title: 'Distribution & Wholesale', value: 'distribution-wholesale' },
         ],

@@ -6,9 +6,9 @@ import { getBrands } from '@/lib/sanity';
 import { getBrandOrderLink } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Our Consumer Brands | Nuna, Nunalac, Bilan & SoFresh',
+  title: 'Our Consumer Brands | Nuna, Nunalac & Bilan',
   description:
-    'Explore Dextron Enterprise consumer brands: Nuna Diapers (baby care), Nunalac (infant nutrition), Bilan (feminine hygiene), and SoFresh SoClean (home cleaning).',
+    'Explore Dextron Enterprise consumer brands: Nuna Diapers (baby care), Nunalac (infant nutrition), and Bilan (feminine hygiene).',
 };
 
 export default async function BrandsPage() {
@@ -23,7 +23,7 @@ export default async function BrandsPage() {
             Brand Portfolio
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">
-            Our 4 Household FMCG Brands
+            Our 3 Household FMCG Brands
           </h1>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
             Dextron Enterprise is a house of brands manufactured to high international benchmarks, certified by KEBS, and priced for real Kenyan living.

@@ -155,7 +155,6 @@ export default function LeadForm({ type = 'distributor', defaultBrand = 'All Bra
                   <option value="Nuna Diapers">Nuna Diapers</option>
                   <option value="Nunalac">Nunalac Infant Cereal</option>
                   <option value="Bilan">Bilan Sanitary Pads</option>
-                  <option value="SoFresh SoClean">SoFresh SoClean Home</option>
                 </select>
               </div>
             )}
@@ -176,7 +175,6 @@ export default function LeadForm({ type = 'distributor', defaultBrand = 'All Bra
                 <option value="Nuna Diapers Baby Care">Nuna Diapers Baby Care</option>
                 <option value="Nunalac Infant Nutrition">Nunalac Infant Nutrition</option>
                 <option value="Bilan Feminine Hygiene">Bilan Feminine Hygiene</option>
-                <option value="SoFresh SoClean Home Cleaning">SoFresh SoClean Home Cleaning</option>
               </select>
             </div>
           )}

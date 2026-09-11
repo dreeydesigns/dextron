@@ -43,7 +43,7 @@ export default function DistributorsPage() {
     {
       icon: ShieldCheck,
       title: '100% Certified High-Turnover Goods',
-      desc: 'All 4 brands (Nuna, Nunalac, Bilan, SoFresh) enjoy rapid repeat consumer purchases and full KEBS safety compliance.',
+      desc: 'Our three brands—Nuna, Nunalac, and Bilan—enjoy rapid repeat consumer purchases and full KEBS safety compliance.',
       color: 'text-purple-600 bg-purple-50 border-purple-100',
     },
   ];

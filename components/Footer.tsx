@@ -8,7 +8,6 @@ export default function Footer() {
     { name: 'Nuna Diapers', href: '/brands/nuna-diapers', tag: 'Baby Diapers' },
     { name: 'Nunalac', href: '/brands/nunalac', tag: 'Infant Cereal' },
     { name: 'Bilan', href: '/brands/bilan', tag: 'Sanitary Pads' },
-    { name: 'SoFresh SoClean', href: '/brands/sofresh-soclean', tag: 'Home Detergents' },
   ];
 
   const quickLinks = [
@@ -75,7 +74,7 @@ export default function Footer() {
 
           {/* Col 3: Our Brands */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Our 4 Brands</h4>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Our 3 Brands</h4>
             <ul className="space-y-2.5 text-sm">
               {brands.map((b) => (
                 <li key={b.name}>

@@ -6,17 +6,16 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Dextron Enterprise Kenya | Quality Baby Care, Feminine Hygiene & Home Essentials',
+    default: 'Dextron Enterprise Kenya | Quality Baby Care, Nutrition & Feminine Hygiene',
     template: '%s | Dextron Enterprise Kenya',
   },
   description:
-    'Dextron Enterprise is a premier Kenyan FMCG manufacturer producing Nuna Diapers, Nunalac Infant Cereal, Bilan Sanitary Pads, and SoFresh Cleaning Essentials. Quality made for Kenyan families.',
+    'Dextron Enterprise is a premier Kenyan FMCG manufacturer producing Nuna Diapers, Nunalac formula and cereal, and Bilan Sanitary Pads. Quality made for Kenyan families.',
   keywords: [
     'Dextron Enterprise',
     'Nuna Diapers Kenya',
     'Nunalac Baby Cereal',
     'Bilan Sanitary Pads',
-    'SoFresh Cleaners',
     'Kenyan FMCG Manufacturer',
     'Baby diapers Nairobi',
     'Affordable diapers Kenya',
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
     url: 'https://dextron.co.ke',
     title: 'Dextron Enterprise Kenya — Nurturing Kenyan Families with Quality Care',
     description:
-      'High-quality baby diapers, fortified infant cereals, feminine hygiene pads, and household detergents made for Kenyan families at affordable prices.',
+      'High-quality baby diapers, infant formula and cereals, and feminine hygiene pads made for Kenyan families at affordable prices.',
     siteName: 'Dextron Enterprise',
   },
 };

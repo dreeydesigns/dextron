@@ -62,7 +62,7 @@ export default function ContactPage() {
             We are Here to Help
           </h1>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Have a question about Nuna Diapers, Nunalac, Bilan, or SoFresh? Looking for a stockist or seeking wholesale terms? Reach out directly.
+            Have a question about Nuna Diapers, Nunalac, or Bilan? Looking for a stockist or seeking wholesale terms? Reach out directly.
           </p>
         </div>
 

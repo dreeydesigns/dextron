@@ -8,7 +8,7 @@ import { getWhatsAppLink } from '@/lib/whatsapp';
 export const metadata: Metadata = {
   title: 'Where to Buy & Stockist Locator | Dextron Enterprise Kenya',
   description:
-    'Find retail supermarkets, pharmacies, baby shops, and wholesalers stocking Nuna Diapers, Nunalac, Bilan, and SoFresh across Nairobi, Mombasa, Kisumu, Nakuru, and Kenya.',
+    'Find retail supermarkets, pharmacies, baby shops, and wholesalers stocking Nuna Diapers, Nunalac, and Bilan across Nairobi, Mombasa, Kisumu, Nakuru, and Kenya.',
 };
 
 export default async function WhereToBuyPage() {

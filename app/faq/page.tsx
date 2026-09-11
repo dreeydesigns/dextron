@@ -15,7 +15,6 @@ export default function FAQPage() {
     { label: 'Nuna Diapers', value: 'nuna-diapers' },
     { label: 'Nunalac Infant Cereal', value: 'nunalac' },
     { label: 'Bilan Sanitary Pads', value: 'bilan' },
-    { label: 'SoFresh Cleaners', value: 'sofresh-soclean' },
     { label: 'Delivery & Shipping', value: 'shipping-delivery' },
     { label: 'Wholesale & Distribution', value: 'distribution-wholesale' },
   ];

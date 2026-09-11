@@ -98,7 +98,7 @@ export default function AboutPage() {
                   Dextron Enterprise stepped in to bridge this gap. By establishing state-of-the-art local
                   manufacturing and rigorous quality-control systems in Nairobi, we produce high-performance consumer
                   goods—from 12-hour leak-proof Nuna Diapers and fortified Nunalac cereal to soothing Bilan sanitary
-                  towels and concentrated SoFresh cleaners—that match multinational standards at everyday affordable prices.
+                  towels—that match multinational standards at everyday affordable prices.
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   <p className="text-xs text-gray-500 font-medium mt-0.5">Kenyan Owned & Operated</p>
                 </div>
                 <div>
-                  <span className="text-2xl sm:text-3xl font-black text-emerald-600">4</span>
+                  <span className="text-2xl sm:text-3xl font-black text-emerald-600">3</span>
                   <p className="text-xs text-gray-500 font-medium mt-0.5">Core Product Lines</p>
                 </div>
                 <div>

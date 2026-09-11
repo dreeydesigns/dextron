@@ -27,12 +27,6 @@ export default function WhatsAppButton() {
       message: 'Hello Dextron! 👋 I would like to order or find stockists for *Bilan Pads*.',
     },
     {
-      label: 'Order SoFresh Cleaning Products',
-      icon: ShoppingBag,
-      color: 'hover:bg-green-50 text-green-700 border-green-200',
-      message: 'Hello Dextron! 👋 I would like to inquire about *SoFresh SoClean* home detergents.',
-    },
-    {
       label: 'Become a Distributor / Stockist',
       icon: Store,
       color: 'hover:bg-purple-50 text-purple-700 border-purple-200',
